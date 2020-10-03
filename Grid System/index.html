@@ -1,0 +1,126 @@
+  <html>
+      <head>
+          <link rel="stylesheet" href="basic.css">
+          <style>
+              .container.basic {
+                  display: grid;
+                  grid-template-columns: 100px auto 100px;
+                  grid-template-rows: 50px 50px;
+                  grid-gap: 3px;
+              }
+
+              .container.fraction {
+                  display: grid;
+                  grid-template-columns: 1fr 2fr 1fr;
+                  grid-template-rows: 50px 50px;
+                  grid-gap: 3px;
+              }
+
+              .container.repeat {
+                  display: grid;
+                  grid-template-columns: repeat(3,1fr);
+                  grid-template-rows: repeat(2, 50px);
+                  grid-gap: 3px;
+              }
+
+              .container.positioning {
+                  display: grid;
+                  grid-template-columns: repeat(3,1fr);
+                  grid-template-rows: 40px 200px 40px;
+                  grid-gap: 3px;
+              }
+        			.header{grid-column: 2 / -1;}
+          			.menu{grid-row: 1 / 3;}
+        			.content{grid-column: 2 / -1;}
+        			.footer{grid-column: 1 / -1;}
+
+              .container.template-area{
+                height: 50%;
+                display: grid;
+                grid-gap: 3px;
+                grid-template-columns: repeat(12,1fr);
+                grid-template-rows: 40px auto 40px;
+                grid-template-areas:
+                  ". h h h h h h h h h h ."
+                  "m c c c c c c c c c c c"
+                  ". f f f f f f f f f f .";
+              }
+              .area-header{grid-area: h;}
+              .area-menu{grid-area: m;}
+              .area-content{grid-area: c;}
+              .area-footer{grid-area: f;}
+
+              .container.autofit-minmax{
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-auto-rows: 100px;
+              }
+
+
+
+
+          </style>
+      </head>
+      <body>
+      	<h2>Basic</h2>
+          <div class="container basic">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+          </div>
+
+          <h2>Fraction</h2>
+          <div class="container fraction">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+          </div>
+
+          <h2>Repeat</h2>
+          <div class="container repeat">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+          </div>
+
+          <h2>Positioning Items</h2>
+          <div class="container positioning">
+              <div class="header">HEADER</div>
+              <div class="menu">MENU</div>
+              <div class="content">CONTENT</div>
+              <div class="footer">FOOTER</div>
+          </div>
+
+          <h2>Template Areas</h2>
+          <div class="container template-area">
+              <div class="area-header">HEADER</div>
+              <div class="area-menu">MENU</div>
+              <div class="area-content">CONTENT</div>
+              <div class="area-footer">FOOTER</div>
+          </div>
+
+          <h2>Autofit and MinMax</h2>
+          <div class="container autofit-minmax">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+          </div>
+      </body>
+  </html>

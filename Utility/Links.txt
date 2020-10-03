@@ -1,0 +1,8 @@
+Title: Remove Unused CSS Properties | PurgeCSS Tutorial
+Link: https://www.youtube.com/watch?v=y3WQoON6Vfc
+
+Title: Content Slider
+Link: http://kenwheeler.github.io/slick/
+
+Title: Angular Internalization
+Link: https://medium.com/@DenysVuika/simple-i18n-support-for-your-angular-apps-6138a47eb2a9

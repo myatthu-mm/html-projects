@@ -1,0 +1,77 @@
+body,html{
+    height: 100vh;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{text-decoration: none;}
+
+body{
+    margin: 0;
+    background: #e7e7e7;
+    display: grid;
+    font-family: 'Roboto';
+    grid-template-areas:
+    "header header"
+    "sidebar main";
+    grid-template-rows: 60px auto;
+    grid-template-columns: 20% auto;
+    font-size: 1.2em;
+}
+
+header, aside, main, section{
+    padding: 20px;    
+}
+
+header{
+    grid-area: header;
+    background: #00C195;
+    display: grid;
+    grid-template-columns: 10% auto;
+}
+
+header a{
+    color:#fff;
+}
+
+aside{
+    background: #d3d3d3;
+}
+
+section{
+    background: #fff;
+    border-radius: 10px;
+    min-height: 30%;
+}
+
+h1{
+    margin:0;
+}
+
+nav{
+    justify-self: right;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    padding: 10px;
+}
+
+aside ul{
+    margin-top: 30px;
+}
+
+aside ul li a{
+    text-transform: uppercase;
+    font-size: .7em;
+    padding: 13px 0;
+    display: block;
+    color:#000;
+}
